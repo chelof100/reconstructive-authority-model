@@ -12,7 +12,7 @@
 **Reconstructive Authority Model: Runtime Execution Validity Under Partial Observability**
 Marcelo Fernandez (TraslaIA), 2026
 
-DOI: [10.5281/zenodo.TBD](https://doi.org/10.5281/zenodo.TBD) &nbsp;|&nbsp; arXiv: [TBD]
+DOI: [10.5281/zenodo.19669430](https://doi.org/10.5281/zenodo.19669430) &nbsp;|&nbsp; arXiv: [TBD]
 
 ---
 
@@ -112,9 +112,9 @@ Note: Attestation IER = 0.233 even at full coverage (|Sp|/|Sr| = 1.0) — the se
   title        = {Reconstructive Authority Model: Runtime Execution Validity
                  Under Partial Observability},
   year         = {2026},
-  doi          = {10.5281/zenodo.TBD},
-  howpublished = {\url{https://doi.org/10.5281/zenodo.TBD}},
-  note         = {Agent Governance Series, Paper~5. Zenodo.}
+  doi          = {10.5281/zenodo.19669430},
+  howpublished = {\url{https://doi.org/10.5281/zenodo.19669430}},
+  note         = {Agent Governance Series, Paper~5. Zenodo. DOI: 10.5281/zenodo.19669430}
 }
 ```
 
