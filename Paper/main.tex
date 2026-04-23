@@ -108,8 +108,7 @@
 P0 & Atomic Decision Boundaries~\cite{fernandez2026a}     & 10.5281/zenodo.19670649 & arXiv:2604.17511\\
 P1 & Agent Control Protocol (ACP)~\cite{fernandez2026b}   & 10.5281/zenodo.19672575 & arXiv:2603.18829\\
 P2 & From Admission to Invariants (IML)~\cite{fernandez2026c} & 10.5281/zenodo.19672589 & arXiv:2604.17517\\
-P3 & Fair Atomic Governance~\cite{fairgov26}              & 10.5281/zenodo.19672597 & TBD\\
-P4 & Irreducible Multi-Scale Governance~\cite{fernandez2026comp} & 10.5281/zenodo.19672608 & TBD\\
+P3/4 & Irreducible Governance Structure~\cite{fernandez2026govstr} & 10.5281/zenodo.19672597 + 10.5281/zenodo.19672608 & TBD\\
 P5 & \textbf{Reconstructive Authority Model (RAM)} & 10.5281/zenodo.19669430 & TBD\\
 \bottomrule
 \end{tabular}
@@ -145,7 +144,7 @@ exhibit invalid execution rates proportional to $(1 - |\Sp|/|\Sr|)$.
 This paper is Paper~5 of the Agent Governance Series.
 It operationalizes the observability impossibility of
 Paper~2~(IML,~\cite{fernandez2026c}) and completes the execution semantics of
-the four-layer architecture of Paper~4~(\cite{fernandez2026comp}).
+the four-layer architecture of Paper~3/4~(\cite{fernandez2026govstr}).
 \end{abstract}
 
 \tableofcontents
@@ -217,12 +216,11 @@ at the policy boundary.
 Paper~2 (IML)~\cite{fernandez2026c} proves the epistemological limits of local
 observability: an agent can never fully observe the state space relevant to its
 own invariants.
-Paper~3~\cite{fairgov26} addresses distributive limits under strategy-proof
-mechanisms.
-Paper~4~\cite{fernandez2026comp} proves the irreducibility of the four-layer
-governance architecture.
+Paper~3/4~\cite{fernandez2026govstr} addresses both distributive limits
+under strategy-proof allocation mechanisms and proves the irreducibility of the
+four-layer governance architecture.
 This paper (P5) closes the series by addressing the runtime question: given
-that observability is incomplete (P2) and the architecture is irreducible (P4),
+that observability is incomplete (P2) and the architecture is irreducible (P3/4),
 how should a system decide whether to execute at all?
 
 % ══════════════════════════════════════════════════════════════════════════════
@@ -1363,18 +1361,15 @@ permanent condition (IML Theorem), execution authority must be designed to
 fail gracefully under incomplete observation.
 RAM is the constructive response to IML's impossibility result.
 
-\paragraph{Paper 3 (Fairness)~\cite{fairgov26}.}
-P3 shows that strategy-proof allocation mechanisms face distributive limits
-under Sybil amplification.
-RAM's conservative halting can be combined with P3's fair allocation framework
-to ensure that halts are distributed equitably across agents.
-
-\paragraph{Paper 4 (Compositional)~\cite{fernandez2026comp}.}
-P4 proves that the four-layer governance architecture (L0--L3) is irreducible.
-RAM operates as the execution authority layer within L2 (behavioral control),
-interacting with L1 (admission/ACP) and L3 (compositional invariants).
-RAM's runtime authority completes the execution semantics of the four-layer
-architecture.
+\paragraph{Paper 3/4 (Governance Structure)~\cite{fernandez2026govstr}.}
+Paper~3/4 establishes two complementary results. First, strategy-proof allocation
+mechanisms face irreducible distributive limits under Sybil amplification; RAM's
+conservative halting can be combined with its fair allocation framework to ensure
+halts are distributed equitably across agents. Second, it proves that the
+four-layer governance architecture (L0--L3) is irreducible under finite
+observability. RAM operates as the execution authority layer within L2 (behavioral
+control), interacting with L1 (admission/ACP) and L3 (compositional invariants),
+and completes the execution semantics of the four-layer architecture.
 
 \paragraph{Series summary.}
 \begin{center}
@@ -1386,8 +1381,7 @@ architecture.
 P0 & When is a decision atomic? & Atomic boundary theorem \\
 P1 & How to enforce the boundary? & ACP admission protocol \\
 P2 & What can be observed? & Observability impossibility result \\
-P3 & Can allocation be fair? & Strategy-proofness limits \\
-P4 & Are four layers irreducible? & Compositional irreducibility \\
+P3/4 & Is governance structure irreducible? & Fair allocation + compositional irreducibility \\
 P5 & Given all of the above, when to execute? & RAM + attestation necessity \\
 \bottomrule
 \end{tabular}

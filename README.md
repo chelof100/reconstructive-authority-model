@@ -54,9 +54,9 @@ where `E(t) = (S_p(t), H(t), delta(t))` is the *coverage envelope* — proven st
 | P0 — [Atomic Boundaries](https://github.com/chelof100/decision-boundary-model) | When is a decision atomic? | Atomic boundary theorem |
 | P1 — [ACP](https://github.com/chelof100/acp-framework-en) | How to enforce the boundary? | Admission control protocol |
 | P2 — [IML](https://github.com/chelof100/iml-benchmark) | What can be observed? | Observability impossibility result |
-| P3 — [Fairness](https://github.com/chelof100/fair-atomic-governance) | Can allocation be fair? | Strategy-proofness limits |
-| P4 — [Compositional](https://github.com/chelof100/compositional-governance) | Are four layers irreducible? | Compositional irreducibility |
+| P3/4 — [Governance Structure](https://github.com/chelof100/governance-structure) | Is governance structure irreducible? | Fair allocation + compositional irreducibility |
 | **P5 — RAM (this paper)** | **Given all of the above, when to execute?** | **RAM + attestation necessity** |
+| P6 — [Operationalizing RAM](https://github.com/chelof100/operationalizing-ram) | How is RAM enforced at runtime? | Runtime protocol + Recovery Loop |
 
 RAM is the *operational closure* of the series: IML (P2) proves that full observability is unachievable; RAM provides the constructive response to that impossibility.
 
