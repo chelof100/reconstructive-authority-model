@@ -216,11 +216,10 @@ at the policy boundary.
 Paper~2 (IML)~\cite{fernandez2026c} proves the epistemological limits of local
 observability: an agent can never fully observe the state space relevant to its
 own invariants.
-Paper~3/4~\cite{fernandez2026govstr} addresses both distributive limits
-under strategy-proof allocation mechanisms and proves the irreducibility of the
-four-layer governance architecture.
+Paper~3/4~\cite{fernandez2026govstr} addresses distributive limits under strategy-proof
+mechanisms and proves the irreducibility of the four-layer governance architecture.
 This paper (P5) closes the series by addressing the runtime question: given
-that observability is incomplete (P2) and the architecture is irreducible (P3/4),
+that observability is incomplete (P2) and the architecture is irreducible (P4),
 how should a system decide whether to execute at all?
 
 % ══════════════════════════════════════════════════════════════════════════════
@@ -1361,15 +1360,15 @@ permanent condition (IML Theorem), execution authority must be designed to
 fail gracefully under incomplete observation.
 RAM is the constructive response to IML's impossibility result.
 
-\paragraph{Paper 3/4 (Governance Structure)~\cite{fernandez2026govstr}.}
-Paper~3/4 establishes two complementary results. First, strategy-proof allocation
-mechanisms face irreducible distributive limits under Sybil amplification; RAM's
-conservative halting can be combined with its fair allocation framework to ensure
-halts are distributed equitably across agents. Second, it proves that the
-four-layer governance architecture (L0--L3) is irreducible under finite
-observability. RAM operates as the execution authority layer within L2 (behavioral
-control), interacting with L1 (admission/ACP) and L3 (compositional invariants),
-and completes the execution semantics of the four-layer architecture.
+\paragraph{Papers 3/4 (Governance Structure)~\cite{fernandez2026govstr}.}
+P3/4 shows that strategy-proof allocation mechanisms face distributive limits
+under Sybil amplification, and proves that the four-layer governance architecture
+(L0--L3) is irreducible. RAM's conservative halting can be combined with the
+fair allocation framework to ensure that halts are distributed equitably across agents.
+RAM operates as the execution authority layer within L2 (behavioral control),
+interacting with L1 (admission/ACP) and L3 (compositional invariants).
+RAM's runtime authority completes the execution semantics of the four-layer
+architecture.
 
 \paragraph{Series summary.}
 \begin{center}
@@ -1381,7 +1380,8 @@ and completes the execution semantics of the four-layer architecture.
 P0 & When is a decision atomic? & Atomic boundary theorem \\
 P1 & How to enforce the boundary? & ACP admission protocol \\
 P2 & What can be observed? & Observability impossibility result \\
-P3/4 & Is governance structure irreducible? & Fair allocation + compositional irreducibility \\
+P3 & Can allocation be fair? & Strategy-proofness limits \\
+P4 & Are four layers irreducible? & Compositional irreducibility \\
 P5 & Given all of the above, when to execute? & RAM + attestation necessity \\
 \bottomrule
 \end{tabular}

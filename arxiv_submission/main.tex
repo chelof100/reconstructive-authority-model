@@ -790,7 +790,7 @@ RAM determines whether it should execute at all.}
 \draw[arr] (split) -| (halt.north);
 
 % ── Arrow: exec / narrow → audit ─────────────────────────────────────────────
-\draw[arr] (exec.south)   |- (audit.west);
+\draw[arr] (exec.south) -- (exec.south |- audit.north);
 \draw[arr] (narrow.south) -- (audit.north);
 \end{tikzpicture}
 \caption{RAM reconstruction gate with three outcomes.
@@ -1087,14 +1087,14 @@ RAM                & \textbf{0.000} & \textbf{1.000} & 0.000 \\
 \begin{figure}[H]
 \centering
 \begin{subfigure}[b]{0.48\textwidth}
-  \includegraphics[width=\textwidth]{../Figures/invalid_execution.png}
+  \includegraphics[width=\textwidth]{Figures/invalid_execution.png}
   \caption{Invalid Execution Rate at baseline coverage\\
            (Attestation~$=$~0.423, Oracle~$=$~0.393, RAM~$=$~0.000)}
   \label{fig:ier-bar}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.48\textwidth}
-  \includegraphics[width=\textwidth]{../Figures/safe_halt.png}
+  \includegraphics[width=\textwidth]{Figures/safe_halt.png}
   \caption{Safe Halt Rate at baseline coverage\\
            (Attestation~$=$~0.145, Oracle~$=$~0.293, RAM~$=$~1.000)}
   \label{fig:shr-bar}
@@ -1108,7 +1108,7 @@ RAM halts all invalid executions with SHR~$=$~1.}
 \begin{figure}[H]
 \centering
 \begin{subfigure}[b]{0.48\textwidth}
-  \includegraphics[width=\textwidth]{../Figures/ier_vs_coverage.png}
+  \includegraphics[width=\textwidth]{Figures/ier_vs_coverage.png}
   \caption{IER vs.\ state coverage $|\Sp|/|\Sr|$
            (attestation model). Error persists even at high coverage
            due to ambiguous/undefined state.}
@@ -1116,7 +1116,7 @@ RAM halts all invalid executions with SHR~$=$~1.}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.48\textwidth}
-  \includegraphics[width=\textwidth]{../Figures/combined_ier.png}
+  \includegraphics[width=\textwidth]{Figures/combined_ier.png}
   \caption{IER vs.\ coverage: Attestation vs.\ Oracle vs.\ RAM.
            RAM maintains IER~$=$~0 across all coverage levels.}
   \label{fig:combined}
@@ -1184,7 +1184,7 @@ Theorem~\ref{thm:attestation-insufficiency}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{../Figures/ocr_vs_coverage.png}
+\includegraphics[width=\textwidth]{Figures/ocr_vs_coverage.png}
 \caption{Left: RAM Over-Conservatism Rate (OCR) as a function of coverage.
 In the idealized simulation (seed~42, $N=100{,}000$), OCR~$=$~0 because the
 authority function $F$ is precisely scoped to execution-critical components.
