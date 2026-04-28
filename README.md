@@ -12,7 +12,7 @@
 **Reconstructive Authority Model: Runtime Execution Validity Under Partial Observability**
 Marcelo Fernandez (TraslaIA), 2026
 
-DOI: [10.5281/zenodo.19669430](https://doi.org/10.5281/zenodo.19669430) &nbsp;|&nbsp; arXiv: [TBD]
+DOI: [10.5281/zenodo.19669430](https://doi.org/10.5281/zenodo.19669430) &nbsp;|&nbsp; arXiv: [2604.22898](https://arxiv.org/abs/2604.22898)
 
 ---
 
