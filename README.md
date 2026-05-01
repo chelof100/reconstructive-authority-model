@@ -57,6 +57,7 @@ where `E(t) = (S_p(t), H(t), delta(t))` is the *coverage envelope* — proven st
 | P3/4 — [Governance Structure](https://github.com/chelof100/governance-structure) | Is governance structure irreducible? | Fair allocation + compositional irreducibility |
 | **P5 — RAM (this paper)** | **Given all of the above, when to execute?** | **RAM + attestation necessity** |
 | P6 — [Operationalizing RAM](https://github.com/chelof100/operationalizing-ram) | How is RAM enforced at runtime? | Runtime protocol + Recovery Loop |
+| P7 — [Closing the Execution Gap](https://github.com/chelof100/agent-governance-applied) | Does the full stack close the gap on real agents? | First empirical validation (LangGraph, Compliant Drift) |
 
 RAM is the *operational closure* of the series: IML (P2) proves that full observability is unachievable; RAM provides the constructive response to that impossibility.
 
